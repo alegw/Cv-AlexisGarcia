@@ -1,0 +1,34 @@
+<section>
+    <div class=full-img id="fullImgBox">
+        <img src="/images/perfil.jpg" id="fullImg" alt="Imagen de perfil">
+        <button onclick="closeImg()">X</button>
+
+
+        <script>
+            const fullImgBox = document.getElementById('fullImgBox');
+            const fullImg = document.getElementById("fullImg");
+
+            function openFullImg(reference) {
+                fullImgBox.style.display = "flex";
+                fullImg.src = reference
+            }
+
+            function closeImg() {
+                fullImgBox.style.display = "none"
+            }
+        </script>
+
+    </div>
+
+    <div class="galeria-img">
+        <img src="/images/perfilCuadrada.jpg" onclick="openFullImg(this.src)" alt="foto de perfil" style="cursor:zoom-in">
+        <a href="#info"><img src="/images/info.jpg" alt="Informacion personal"></a>
+        <a href="#formacion"><img src="/images/formAca.jpg" alt="Formacion Academica"></a>
+        <a href="#experiencia"><img src="/images/expLabo.jpg" alt="Experiencia laboral"></a>
+        <a href="#conocimientos"><img src="/images/conInfo.jpg" alt="Conocimientos informaticos"></a>
+        <a href="#idiomas"><img src="/images/idioma.jpg" alt="Idiomas"></a>
+        <a href="#contacto"><img src="/images/contacto.jpg" alt="Contactame"></a>
+        <a href="#fotosxelmundo"><img src="/images/mundo.jpg" alt="Fotos por el mundo"></a>
+
+    </div>
+</section>
